@@ -1,0 +1,4 @@
+AndroidProject/.gradle/
+AndroidProject/**/build/
+AndroidProject/local.properties
+__pycache__/
