@@ -1,2 +1,19 @@
-# metasongi-projection-mapper
-Android-first projection mapping app with surface edting, corner warping, masks and external projector otput.
+# MetaSonGi Projection Mapper
+
+안드로이드부터 개발하는 휴대폰 기반 프로젝션 매핑 앱입니다.
+
+## 현재 상태
+저장소와 요구사항·개발 계획을 초기화했습니다. 실행 가능한 앱·Unity 프로젝트·하드웨어 연동은 아직 구현하지 않았습니다.
+
+## MVP 개발 목록
+- [ ] 외부 디스플레이 연결 감지와 프로젝터 전용 출력
+- [ ] 휴대폰 편집 화면과 외부 출력 화면 분리
+- [ ] 사각형 영역 추가와 네 꼭짓점 조절
+- [ ] 사진·동영상 배치, 영역 마스킹과 반복 재생
+- [ ] 프로젝트 저장·불러오기
+
+## 개발 순서
+1단계: 기기 HDMI 출력 검증 → 2단계: 테스트 패턴과 사각형 워핑 → 3단계: 미디어·마스크 → 4단계: 저장과 기기 테스트.
+
+## 설계와 프로젝트 경계
+Android 네이티브 앱을 우선합니다. 후보 구조는 Kotlin UI + GPU 렌더러 + 외부 디스플레이 출력입니다. SIFT 직접 매칭과 AR Foundation 런타임 이미지 등록은 별도 기술 검토 항목이며, AR 추적만으로 프로젝터 좌표 보정이 완료되지는 않습니다. iOS는 후속 단계입니다.
